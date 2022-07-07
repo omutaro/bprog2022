@@ -1185,3 +1185,39 @@ Ok, one module loaded.
 2022-06-30 15:55:55.764595507
 >>> :q
 Leaving GHCi.
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/sayuri/bprog2022/.ghci
+2022-07-07 16:05:00.585210288
+>>> :e src/Caesar where
+catn: src/Caesar: openFile: does not exist (No such file or directory)
+2022-07-07 16:05:25.330628896
+>>> :l src/Caesar where
+target ‘where’ is not a module name or a source file
+2022-07-07 16:05:25.399698286
+>>> :e src/Caesar where
+catn: src/Caesar: openFile: does not exist (No such file or directory)
+2022-07-07 16:06:10.998745802
+>>> :l src/Caesar where
+target ‘where’ is not a module name or a source file
+2022-07-07 16:06:11.096653091
+>>> :e src/Caesar.hs
+   1  module Caesar where
+   2  
+   3  import Data.Char
+Ok, no modules loaded.
+2022-07-07 16:06:54.320742097
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-07 16:06:54.43156745
+>>> ord '1'
+49
+2022-07-07 16:07:19.459013607
+>>> ord 'A'
+65
+2022-07-07 16:07:41.436874896
+>>> ord 'a'
+97
+2022-07-07 16:07:47.342679601
+>>> :q
+Leaving GHCi.
